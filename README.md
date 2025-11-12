@@ -36,7 +36,20 @@ El objetivo principal es aplicar los conceptos de arquitectura en capas, validac
 git clone https://github.com/VickyA7/TPSpring-productos-api.git
 cd productos-api
 ```
-## ENDPOINTS
+### 2️⃣  Compilar y ejecutar el proyecto
+```bash
+./mvnw clean install
+./mvnw spring-boot:run 
+```
+### En Windows:
+```bash
+mvnw.cmd clean install
+mvnw.cmd spring-boot:run 
+```
+### 3️⃣ Verificar que la aplicación está corriendo
+La aplicación estará disponible en: http://localhost:8080
+
+## TABLA DE ENDPOINTS
 
 | Método     | Ruta                                   | Descripción                             | Cuerpo esperado      |
 | ---------- | -------------------------------------- | --------------------------------------- | -------------------- |
@@ -47,4 +60,8 @@ cd productos-api
 | **PUT**    | `/api/productos/{id}`                  | Actualizar un producto completo         | `ProductoDTO`        |
 | **PATCH**  | `/api/productos/{id}/stock`            | Actualizar solo el stock de un producto | `ActualizarStockDTO` |
 | **DELETE** | `/api/productos/{id}`                  | Eliminar un producto                    | —                    |
+
+## 📸 Capturas de Pantalla
+### 1. Documentación de Swagger UI
+<img width="1087" height="832" alt="image" src="https://github.com/user-attachments/assets/9339be99-cc5f-48ce-b1c0-bcb433edf369" />
 
